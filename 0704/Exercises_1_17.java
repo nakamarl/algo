@@ -15,7 +15,7 @@ public class Exercises_1_17{
 				System.out.printf(" ");
 			}
 			for(k=0;k<i*2-1;k++){
-				System.out.printf("%d",i);
+				System.out.printf("%d",i%10);
 			}
 			System.out.printf("\n");
 		}
