@@ -3,22 +3,15 @@ import java.util.*;
 class Excersises_2_9{
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
-		int flag;
+		System.out.printf("年内の残り日数を表示します\n");
+		System.out.printf("年：");
+		int year = scn.nextInt();
+		System.out.printf("月：");
+		int month = scn.nextInt();
+		System.out.printf("日：");
+		int day = scn.nextInt();
 		
-		while(true){
-			System.out.printf("年：");
-			int year = scn.nextInt();
-			System.out.printf("月：");
-			int month = scn.nextInt();
-			System.out.printf("日：");
-			int day = scn.nextInt();
-			
-			System.out.printf("残り%d日\n",leftDayOfYear(year,month,day));
-			
-			System.out.printf("もう一度？(1:はい/0:いいえ)：");
-			flag = scn.nextInt();
-			if(flag == 0) break;
-		}
+		System.out.printf("残り%d日\n",leftDayOfYear(year,month,day));
 	}
 	
 	static int leftDayOfYear(int y,int m,int d){
