@@ -20,7 +20,7 @@ class Excersises_2_9{
 			{31,29,31,30,31,30,31,31,30,31,30,31},
 		};
 		int lastday = 0;
-		int isUruu = (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) ? 1 : 0;
+		int isUruu = ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0) ? 1 : 0;
 		
 		for(int i = m;i<=11;i++){
 			lastday += days[isUruu][i];
