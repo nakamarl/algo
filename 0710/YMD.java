@@ -2,8 +2,46 @@ class YMD{
 	int year;
 	int month;
 	int day;
-		
-	YMD(int y,int m,int d){
+	
+	public int getY(){
+		return this.year;
+	}
+	
+	public int getM(){
+		return this.month;
+	}
+	
+	public int getD(){
+		return this.day;
+	}
+	
+	
+	public void setY(int y){
+		this.year = y;
+	}
+	
+	public void setM(int m){
+		this.month = m;
+	}
+	
+	public void setD(int d){
+		this.day = d;
+	}
+	
+	
+	public YMD(int y){
+		this.year = y;
+		this.month = 1;
+		this.day = 1;
+	}
+	
+	public YMD(int y,int m){
+		this.year = y;
+		this.month = m;
+		this.day = 1;
+	}
+	
+	public YMD(int y,int m,int d){
 		this.year = y;
 		this.month = m;
 		this.day = d;
